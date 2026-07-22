@@ -5,7 +5,6 @@ import {
   FolderKanban, 
   CheckSquare, 
   MessageSquare, 
-  User,
   Plus
 } from 'lucide-react';
 import { Dialog } from './ui/Dialog';
