@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
-import type { PageView } from '../context/AppContext';
 import { 
   LayoutDashboard, 
   FolderKanban, 
   CheckSquare, 
   MessageSquare, 
   User,
-  Plus,
-  Sparkles
+  Plus
 } from 'lucide-react';
 import { Dialog } from './ui/Dialog';
 import { Input } from './ui/Input';
@@ -34,13 +32,6 @@ export const BottomMobileNav: React.FC = () => {
     return null;
   }
 
-  const navItems: { page: PageView; label: string; icon: React.ReactNode }[] = [
-    { page: 'dashboard', label: 'Home', icon: <LayoutDashboard className="h-5.5 w-5.5" /> },
-    { page: 'projects', label: 'Projects', icon: <FolderKanban className="h-5.5 w-5.5" /> },
-    { page: 'tasks', label: 'Tasks', icon: <CheckSquare className="h-5.5 w-5.5" /> },
-    { page: 'messages', label: 'Chat', icon: <MessageSquare className="h-5.5 w-5.5" /> },
-    { page: 'profile', label: 'Profile', icon: <User className="h-5.5 w-5.5" /> }
-  ];
 
   const handleCreateTask = (e: React.FormEvent) => {
     e.preventDefault();

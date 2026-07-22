@@ -14,8 +14,7 @@ import {
   ShieldAlert,
   ChevronLeft,
   ChevronRight,
-  LogOut,
-  User
+  LogOut
 } from 'lucide-react';
 
 export const Sidebar: React.FC = () => {
